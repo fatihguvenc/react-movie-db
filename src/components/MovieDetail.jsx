@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { API } from "../API/api";
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { API } from '../API/api';
 // Components
-import SimilarCard from "./SimilarCard";
+import SimilarCard from './SimilarCard';
 
 export default function MovieDeteail(props) {
-  // https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
   const { movies } = props;
   const [movie, setMovie] = useState([]);
   const [similar, setSimilar] = useState([]);
